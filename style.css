@@ -1,0 +1,1348 @@
+/* общие стили */
+/* общие стили */
+/* общие стили */
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/*    font-family: "Inter", sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    background-color: #FFFFFF;
+}
+
+.green-text {
+    color: green;
+}
+
+
+h2 {
+    font-weight: 400;
+    color: #4D4D4D;
+    font-size: 36px;
+}
+
+p {
+    font-weight: 400;
+    color: #717171;
+    font-size: 16px;
+}
+
+a {
+    border: none;
+    text-decoration: none;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Header */
+/* Header */
+/* Header */
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    background-color: #F5F7FA;
+}
+
+.glavnoe {
+    width: 100%;
+    max-width: 1220px;
+    height: 84px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    gap: 5px;
+    animation: box-logo 10s infinite;
+}
+
+.logo-text {
+    display: flex;
+    align-items: center;
+}
+
+.logo-text a {
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+.logo img {
+    width: 40px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.text-nav ul {
+    display: flex;
+    gap: 40px;
+    list-style-type: none;
+}
+
+.text-nav ul li a {
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+}
+
+.btn {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.btn a {
+    font-size: 14px;
+    text-decoration: none;
+    color: green;
+}
+
+.btn button {
+    width: 80px;
+    height: 40px;
+    color: rgb(254, 254, 254);
+    background-color: green;
+    border: none;
+    border-radius: 10px;
+}
+
+
+@media (max-width: 1230px) {
+    .glavnoe {
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .glavnoe {
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 890px) {
+    .glavnoe {
+        padding: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+}
+
+
+@media (max-width: 706px) {
+    .glavnoe {
+        margin-bottom: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+}
+
+@keyframes box-logo {
+0% {opacity: 0;};
+25% {transform: translateX(10px)};
+50% {transform: translateX(20px)};
+75% {transform: translateX(30px)};
+100% {transform: translateX(40px)};
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  hero */
+/*  hero */
+/*  hero */
+
+.hero {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F5F7FA;
+}
+
+.hero__description {
+    max-width: 1152px;
+    min-height: 600px;
+    padding: 100px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-description-inner {
+    display: flex;
+}
+
+.hero__description h1 {
+    font-size: 64px;
+    font-weight: 400;
+    color: #4D4D4D;
+}
+
+.hero__description p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #717171;
+    margin-bottom: 30px;
+}
+
+.hero-text {
+    width: 57%;
+    /* рассчитали по формуле процентов */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.hero-text button {
+    width: 127px;
+    height: 52px;
+    color: rgb(254, 254, 254);
+    background-color: #388E3B;
+    border-radius: 5px;
+    border: none;
+}
+
+.photo-container {
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    min-height: 410px;
+}
+
+.slider-buttons {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+
+}
+
+.tochka {
+    width: 10px;
+    height: 10px;
+    background-color: #388E3B;
+    border-radius: 10px;
+}
+
+
+
+@media (max-width: 1200px) {
+    .hero {
+        padding: 40px;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .hero {
+        padding: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 900px) {
+    .hero-description-inner {
+        margin-bottom: 100px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+    }
+
+    .hero-text {
+        padding-bottom: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+    }
+}
+
+
+@media (max-width: 706px) {
+    .hero {
+        margin-bottom: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 1 раздел */
+/* 1 раздел */
+/* 1 раздел */
+
+.firt-razdel {
+    width: 100%;
+    max-width: 1152px;
+    padding: 40px 0;
+    height: 100%;
+}
+
+.text__descripshion {
+    width: 100%;
+    max-width: 1152px;
+    height: 100%;
+    min-height: 190px;
+}
+
+.text-firt1 {
+    width: 100%;
+    height: 100%;
+    min-height: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.logo-slash {
+    width: 100%;
+    height: 100%;
+    min-height: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+
+.text-firt {
+    width: 100%;
+    max-width: 1152px;
+    height: 100%;
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 16px;
+}
+
+.text-firt h2 {
+    width: 530px;
+    height: 80px;
+    text-align: center;
+}
+
+.grid-text-foto {
+    width: 100%;
+    max-width: 1152px;
+    height: 100%;
+    min-height: 280px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 144px;
+    text-align: center;
+    padding: 16px;
+    /* opacity: 70; */
+    box-shadow: 0px 2px 4px 0px rgba(171, 190, 209, 0, 2);
+    width: 299px,
+}
+
+.grid {
+    padding-left: 32px;
+    padding-bottom: 24px;
+    padding-top: 24px;
+    padding-right: 32px;
+}
+
+.grid h2 {
+    padding: 8px;
+}
+
+
+
+/* До 1200 и меньше (Планшеты большие) */
+@media (max-width: 1250px) {
+    .text__descripshion {
+        padding: 40px;
+    }
+}
+
+
+/* До 992 и меньше (Планшеты обычные) */
+@media (max-width: 992px) {
+    .text__descripshion {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+@media (max-width: 1000px) {
+    .text-firt {
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .grid-text-foto {
+        padding: 20px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 900px) {
+    .text-firt {
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .text-firt {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* второй раздел */
+/* второй раздел */
+/* второй раздел */
+
+.two-razdel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.two-razdel__descripshion {
+    width: 100%;
+    height: 100%;
+    min-height: 430px;
+    display: flex;
+    gap: 20px;
+    padding: 48px 48px;
+}
+
+.foto-firt {
+    width: 442px;
+    height: 433px;
+}
+
+.text-and-btn {
+    width: 660px;
+    height: 270px;
+}
+
+.text-and-btn h2 {
+    width: 550px;
+    height: 88px;
+    font-size: 36px;
+    margin-bottom: 16px;
+}
+
+.text-and-btn p {
+    margin-bottom: 16px;
+    font-size: 12px;
+}
+
+.text-and-btn button {
+    width: 150px;
+    height: 52px;
+    color: rgb(254, 254, 254);
+    background-color: #388E3B;
+    border: none;
+    border-radius: 5px;
+}
+
+
+/*  секция бизнес */
+/*  секция бизнес */
+/*  секция бизнес */
+
+.business {
+    width: 100%;
+    background-color: rgba(245, 247, 250, 1);
+    display: flex;
+    justify-content: center;
+}
+
+.business__inner {
+    max-width: 1152px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-text-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    margin-bottom: 48px;
+}
+
+.text-local {
+    width: 100%;
+    max-width: 370px;
+    height: 120px;
+}
+
+.text-local p {
+    width: 120%;
+}
+
+
+.container-logo {
+    width: 100%;
+    max-width: 540px;
+    height: 100%;
+    min-height: 160px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.log {
+    display: flex;
+    align-items: center;
+}
+
+.log h2 {
+    font-size: 28px;
+}
+
+.text-okolo {
+    padding: 20px 10px;
+}
+
+.razdel-phon {
+    width: 100%;
+    height: 100%;
+    max-width: 1152px;
+    min-height: 430px;
+    display: flex;
+    gap: 20px;
+    padding: 48px 48px;
+}
+
+
+.btn-and-text {
+    width: 100%;
+    height: 100%;
+    max-width: 550px;
+
+}
+
+.btn-and-text h2 {
+    width: 550px;
+    height: 88px;
+    font-size: 36px;
+    margin-bottom: 16px;
+}
+
+.btn-and-text p {
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+.btn-and-text button {
+    width: 150px;
+    height: 52px;
+    color: rgb(254, 254, 254);
+    background-color: #388E3B;
+    border: none;
+    border-radius: 5px;
+}
+
+.foto-phon {
+    width: 440px;
+    height: 430px;
+}
+
+.razdel-tesla {
+    width: 100%;
+    height: 100%;
+    min-height: 390px;
+    display: flex;
+    justify-content: center;
+    gap: 78px;
+    padding: 32px 32px;
+    background-color: #F5F7FA;
+    margin-bottom: 40px;
+}
+
+.foto-tesla {
+    width: 100%;
+    max-width: 320px;
+    min-height: 320px;
+    box-shadow: 0px 8px 16px 0px rgba(171, 190, 209, 0, 4)
+}
+
+.text-tesla {
+    width: 100%;
+    max-width: 740px;
+    min-height: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-top: 30px;
+}
+
+.tim-smith h2 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.logo-tesla {
+    display: flex;
+    gap: 40px;
+}
+
+.customs {
+    display: flex;
+}
+
+.customs h2 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.customs a {
+    color: #388E3B;
+}
+
+
+.razdel-notebook {
+    width: 100%;
+    max-width: 1152px;
+    height: 100%;
+    min-height: 506px;
+    margin-bottom: 40px;
+}
+
+.text-marketing {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.text-marketing p {
+    width: 620px;
+    height: 70px;
+    text-align: center;
+}
+
+.container-foto-marketing {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.marketing {
+    position: relative;
+}
+
+.marketing-on-text {
+    width: 320px;
+    height: 170px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    top: 70%;
+    left: 7%;
+    padding: 20px;
+    background-color: #F5F7FA;
+    border-radius: 5px;
+}
+
+.marketing-on-text h2 {
+    font-size: 20px;
+}
+
+.marketing-on-text a {
+    color: #388E3B;
+}
+
+.marketing-on-text p {
+    text-align: center;
+    font-size: 20px;
+}
+
+
+@media (max-width: 1330px) {
+    .razdel-tesla {
+        padding: 20px 20px;
+    }
+}
+
+
+@media (max-width: 1230px) {
+    .two-razdel__descripshion {
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .razdel-phon {
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1150px) {
+
+    .razdel-notebook {
+        width: 100%;
+    }
+
+    .container-foto-marketing {
+        padding: 20px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 100px;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .two-razdel__descripshion {
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .text-and-btn {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .foto-firt {
+        width: 400px;
+        height: 320px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .business {
+        padding: 20px;
+    }
+
+    .razdel-phon {
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn-and-text {
+        text-align: center;
+    }
+
+    .razdel-tesla {
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 890px) {
+    .two-razdel__descripshion {
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .container-text-logo {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        text-align: center;
+    }
+}
+
+.razdel-phon {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+@media (max-width: 706px) {
+    .two-razdel__descripshion {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .logo-tesla {
+        width: 100%;
+        display: grid;
+
+    }
+
+    .customs {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 560px) {
+    .container-logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  Предпоследний раздел */
+/*  Предпоследний раздел */
+/*  Предпоследний раздел */
+
+.last-section {
+    width: 100%;
+}
+
+.last-section__inner {
+    width: 100%;
+}
+
+
+.footer__descripshion {
+    width: 100%;
+    min-height: 300px;
+    background-color: #F5F7FA;
+    display: flex;
+    align-items: center;
+}
+
+.footer-glav-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-glav-text img {
+    width: 10px;
+    height: 10px;
+}
+
+.footer-glav-text h3 {
+    text-align: center;
+    width: 887px;
+    min-height: 150px;
+    font-size: 64px;
+    font-weight: 400;
+    color: rgba(38, 50, 56, 1);
+}
+
+.footer-glav-text button {
+    width: 180px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(76, 175, 79, 1);
+    border: none;
+    border-radius: 5px;
+}
+
+.footer-glav-text button img {
+    margin-left: 10px;
+}
+
+
+
+@media (max-width: 920px) {
+
+    .footer-glav-text h3 {
+        width: 100%;
+        font-size: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* низ сайта */
+/* низ сайта */
+/*  низ сайта*/
+
+footer {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    background-color: #263238;
+}
+
+.footer__inner {
+    width: 100%;
+    max-width: 1160px;
+}
+
+.nav-nexcent {
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+}
+
+.glav-nav {
+    width: 100%;
+    max-width: 1160px;
+    height: 100%;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+}
+
+.footer-nexcent-logo {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.footer-inner {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.footer-inner a {
+    font-size: 22px;
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+.text-cor {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.lodo-container {
+    display: flex;
+    gap: 7px;
+}
+
+.text-cor p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #F5F7FA;
+}
+
+.footer-flex-nav {
+    display: flex;
+    gap: 20px;
+}
+
+.so {
+    display: grid;
+    gap: 10px;
+}
+
+.so h4 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.so form label {
+    border-radius: 0px;
+    color: white;
+}
+
+.inner-b a {
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.form-x {
+    margin-bottom: 90px;
+}
+
+.glav-nav__email-input {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.form-x input {
+    width: 180px;
+    height: 28px;
+    position: relative;
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+    background-color: #D9DBE1;
+    border-radius: 0px;
+}
+
+.form-x input::placeholder {
+    padding-left: 10px;
+}
+
+.form-x img {
+    position: absolute;
+    right: 10px;
+}
+
+@media (max-width: 920px) {
+
+    .footer__descripshion {
+        width: 100%;
+    }
+
+    .glav-nav {
+        width: 100%;
+        padding: 30px 30px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .footer-flex-nav{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footer-glav-text h3 {
+        width: 100%;
+        font-size: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+}

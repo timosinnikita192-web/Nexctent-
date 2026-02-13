@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<style>
+
+/* Всё что больше чем 1921 то есть большое моего экрана */
+        @media (min-width: 1921px) {}
+
+
+        /* До 1400 и меньше (Ноутбуки) */
+        @media (max-width: 1400px) {}
+
+
+        /* До 1200 и меньше (Планшеты большие) */
+        @media (max-width: 1200px) {}
+
+
+        /* До 992 и меньше (Планшеты обычные) */
+        @media (max-width: 992px) {
+        .header{
+            display: flex;
+            flex-direction: column;
+        }
+        }
+
+
+        /* До 767px и меньше (Планшеты маленькие) */
+        @media (max-width: 768px) {}
+
+
+        /* до 576 и меньше (Телефоны большие) */
+        @media (max-width: 576px) {
+            .header__inner {
+                background-color: chartreuse;
+            }
+        }
+
+    
+
+</style>
+
+
+</body>
+</html>
